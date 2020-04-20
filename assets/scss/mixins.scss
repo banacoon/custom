@@ -1,0 +1,15 @@
+@mixin bg-cover($bg_url) {
+    background-image: url($bg_url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    background-size: cover;
+}
+
+@mixin bg-contain($bg_url) {
+    background-image: url($bg_url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    background-size: contain;
+}

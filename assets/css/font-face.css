@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Bodoni';
+  src: url('../fonts/Bodoni/Bodoni-Regular.otf') format('opentype'),
+  url('../fonts/Bodoni/Bodoni-Regular.woff') format('woff'),
+  url('../fonts/Bodoni/Bodoni-Regular.ttf')  format('truetype'),
+  url('../fonts/Bodoni/Bodoni-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,154 @@
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper{
+  box-shadow: 0 6px 24px 0 rgba(54,53,41,0.16);
+  border-radius: 12px;
+  border: none;
+  height: 405px;
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.bx-wrapper img {
+  max-width: calc(100% - 2px);
+  display: block;
+}
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  -webkit-transform: translatez(0);
+  border-radius: 12px;
+}
+.bx-viewport div { min-height: 1px; min-width: 1px; }
+.slide{
+  width: 970px;
+}
+/** THEME
+===================================*/
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+  height: 2px;
+  text-align: center;
+  color: #C8C8C8;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #C8C8C8;
+  color: transparent;
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 0 3px;
+  outline: 0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #FFBD48;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: top;
+  *zoom: 1;
+  *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  outline: 0;
+  width: 20px;
+  height: 16px;
+  color: transparent;
+  z-index: 50;
+}
+.bx-wrapper .bx-prev {
+    left: -57px;
+    transform: rotate(180deg);
+    background: url('../images/arrow.svg') no-repeat center center;
+    background-size: 20px 16px;
+    transition: .3s linear all;
+}
+.bx-wrapper .bx-prev:hover{
+  background: url('../images/arrow_hover.svg') no-repeat center center;
+   background-size: 20px 16px;
+}
+.bx-wrapper .bx-next {
+    right: -57px;
+    background-size: 20px 16px;
+    background: url('../images/arrow.svg') no-repeat center center;
+    transition: .3s linear all;
+}
+.bx-wrapper .bx-next:hover{
+  background-size: 20px 16px;
+  background: url('../images/arrow_hover.svg') no-repeat center center;
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1365px) {
+
+.bx-wrapper .bx-prev {
+    left: 25px;
+}
+.bx-viewport {
+  height: 405px !important;
+}
+.bx-wrapper img {
+  height: 405px;
+}
+.bx-wrapper .bx-next {
+    right: 25px;
+}
+}
+@media (min-width: 320px) and (max-width: 699px) {
+.bx-wrapper{
+  height: 205px;
+}
+.bx-wrapper img {
+  width: 100%;
+  height: 205px;
+}
+.bx-viewport {
+  height: 205px !important;
+}
+.bx-wrapper .bx-prev {
+    left: 25px;
+}
+.bx-wrapper .bx-next {
+    right: 25px;
+}
+
+}
